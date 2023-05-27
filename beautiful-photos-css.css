@@ -1,79 +1,112 @@
 body {
-                background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?');
-                
-                background-size:cover;
-                color:#00d9ff;
-                text-align:center;
-            }
-            
-            img {
-                width:620px;
-                height:500px;
-                border:4px dashed #0717f5;
-                
-               
-            }
-            
-            .gallery {
-                text-align:left;
-                margin-left:10px;
-            }
-            
-            #fullpage {
-                display: none;
-                position: absolute;
-                z-index: 9999;
-                top: 0;
-                left: 0;
-                width: 100vw;
-                
-                height: 100vh;
-                background-size: contain;
-                background-repeat: no-repeat no-repeat;
-                background-position: center center;
-                background-color: black;
+  color: #00a5ff;
+  background-color: #AB47BC;
+  font-family: 'Newsreader', serif;
 }
-            
-      /* .video-view {
-        position: relative;
-        height:200px;
-        width:300px;
-        
-       }
+html {
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
 
-        .video-view .video {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          background-color: #ccc;
-        }
+p {
+  margin-top: 0;
+  text-align: center;
+}
 
-        .video-view .video-content {
-          position: absolute;
-          bottom: 0px;
-        }     
+img {
+  max-width: 100%;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
 
-.video-view1 {
-        position: relative;
-        height:238px;
-        width:300px;
-        
-       }
+}
+.images a {
+  width: calc( 100%/3 - 20px);
+  margin: 10px;
+  display: block;
+  text-decoration: none;
+  border-width: 4px;
+  border-color: #4b00ff;
+  border-style: dashed;
+  padding: 4px;
+}
+.images a:focus, .images a:visited, .images a:hover {
+  text-decoration: none;
+}
+.images a img {
+  display: block;
+  height: auto;
+}
 
-        .video-view1 .video1 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          background-color: #ccc;
-        }
+@media screen and (max-width: 500px){
+  .images a {
+      width: calc(100% / 3);
+  }
+}
 
-        .video-view1 .video-content1 {
-          position: absolute;
-          bottom: 0px;
-        }  
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #AB47BC;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+#popup img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#popup .wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+#popup .wrapper .image {
+  width: 100%;
+  height: 100%;
+}
+.next, .prev {
+  font-size: 150%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.prev {
+  left: 0;
+  right: auto;
+}
 
-*/
-            
-            
+
+
+.button, .button:visited, .button:focus, .button:hover {
+  display: block;
+  background-color: lightgray;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: black;
+  transition: all 1000ms;
+}
+.button:hover,
+.button.highlight {
+  background-color: #a2e653;
+}
