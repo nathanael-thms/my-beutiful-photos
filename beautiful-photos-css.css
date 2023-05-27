@@ -1,6 +1,6 @@
 body {
   color: #00a5ff;
-  background-color: #AB47BC;
+  background-color: #91dde3;
   font-family: 'Newsreader', serif;
 }
 html {
@@ -20,7 +20,7 @@ p {
 }
 
 img {
-  width: 500px;;
+  max-width: 100%;
 }
 .images {
   display: flex;
@@ -58,7 +58,7 @@ img {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #AB47BC;
+  background-color: #91dde3;
 }
 .close {
   position: absolute;
