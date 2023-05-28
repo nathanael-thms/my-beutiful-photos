@@ -208,19 +208,7 @@
                 window.location.hash = '#' + image;
 
 
-                // go to next image after 20 seconds.
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    if(current_image.next().length === 0 ) {
-                        close();
-                        setTimeout(function() {
-                            $('.images a').first().trigger('click');
-                        }, 1)
-                    } else {
-                        goNext();
-                    }
-                }, 20000);
-            }
+                }
 
             var close = function(){
                 clearTimeout(timeout);
